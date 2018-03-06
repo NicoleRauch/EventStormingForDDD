@@ -1,0 +1,54 @@
+\usepackage{ngerman}
+
+\setbeamercovered{dynamic}
+\setbeamertemplate{navigation symbols}{}
+
+\RequirePackage{ifthen}
+\newif\ifen
+\newif\ifde
+\newcommand{\en}[1]{\ifen#1\fi}
+\newcommand{\de}[1]{\ifde#1\fi}
+
+\newif\ifthree
+\newcommand{\three}[1]{\ifthree#1\fi}
+
+\newif\ifdetails
+\newcommand{\details}[1]{\ifdetails#1\fi}
+\newcommand{\detailsOrNot}[2]{\ifthenelse{\boolean{details}}{#1}{#2}}
+
+\usepackage{etoolbox}
+\newbool{detailFrames}
+\newcommand{\showDetails}[0]{\ifbool{detailFrames}{1-}{0}}
+\newcommand{\showDetailsFrom}[1]{\ifbool{detailFrames}{#1-}{0}}
+
+
+\author{~}
+\subtitle{~}
+\institute{\copyrightnotice}
+
+%\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+%\usepackage{textcomp}
+%\usepackage[scaled=.92]{helvet} % helvetica
+%\usepackage[scaled=.82]{beramono} % bitstream vera sans mono
+
+\usepackage{tikz,wallpaper}
+\usetikzlibrary{shapes,backgrounds,patterns,fadings}
+
+\definecolor[named]{comments}{HTML}{808080}
+\definecolor[named]{identifiers}{HTML}{FF0000}
+\definecolor[named]{blockbackground}{HTML}{F1EEE9}
+\definecolor[named]{strings}{HTML}{0000FF}
+\usepackage[final]{listings}
+
+\newcommand*{\partwallpaper}{}
+
+
+%remove the icon
+\setbeamertemplate{bibliography item}{}
+
+%remove line breaks
+\setbeamertemplate{bibliography entry title}{}
+\setbeamertemplate{bibliography entry location}{}
+\setbeamertemplate{bibliography entry note}{}
+
