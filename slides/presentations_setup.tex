@@ -52,3 +52,11 @@
 \setbeamertemplate{bibliography entry location}{}
 \setbeamertemplate{bibliography entry note}{}
 
+\newcounter{NoteCounter}
+\newcommand{\numberednote}[1]{%
+\note{
+\vspace{-2em}
+(\stepcounter{NoteCounter}\theNoteCounter) \\[.5em]%
+#1
+}
+}

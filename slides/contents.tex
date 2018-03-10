@@ -16,11 +16,15 @@ Warum Domain-Driven Design?
 
 \begin{itemize}
 \item Gemeinsames Verständnis schaffen
-\item Strukturierung des Codes
 \item Trennung Business Logik $\leftrightarrow$ Technik
+\item Strukturierung des Codes
 \end{itemize}
 
 \end{frame}
+
+\numberednote{
+Wir fokussieren heute auf den 1. und ein Stück weit auf den 2. Aspekt.
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]{Gemeinsames Verständnis schaffen}
@@ -75,12 +79,27 @@ Warum Domain-Driven Design?
 \end{tikzpicture}
 
 \end{frame}
-% Standing on the shoulders of giants
 
-% Das möchte ich Euch heute vorstellen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}[fragile]{}
+%
+%\begin{itemize}
+%\item Wenig Domain-Driven Design
+%\item Viel gemeinsames Verständnis
+%\begin{itemize}
+%\item Knowledge Crunching
+%\item mit EventStorming
+%\end{itemize}
+%\end{itemize}
+%
+%\end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{}
+\numberednote{
+Standing on the shoulders of giants
+
+~\\
+
+Das möchte ich Euch heute vorstellen
 
 \begin{itemize}
 \item Wenig Domain-Driven Design
@@ -89,11 +108,10 @@ Warum Domain-Driven Design?
 \item Knowledge Crunching
 \item mit EventStorming
 \end{itemize}
-
 \end{itemize}
 
-\end{frame}
-% EventStorming ist ein Weg, sehr schnell zu einem sehr detaillierten Modell zu kommen
+EventStorming: sehr schnell sehr detailliertes Modell
+}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -107,9 +125,11 @@ Warum Domain-Driven Design?
 
 \end{frame}
 
-% Ubiquitous Language - Begriffe sind eindeutig und klar abgegrenzt
+\numberednote{
 
-% Jeder entwickelt eigene Vorstellung von etwas Gehörtem
+Jeder entwickelt eigene Vorstellung von etwas Gehörtem
+
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]{}
@@ -122,14 +142,20 @@ Warum Domain-Driven Design?
 
 \end{frame}
 
-% sonne stand am himmel, strand breitete sich vor mir aus, meer schwappte sanft ans ufer
-% jeder von euch hat wahrscheinlich ein bild im kopf
-% vielleicht sieht euer bild so oder so ähnlich aus
-% vielleicht war ich aber gar nicht allein, sondern in Gesellschaft
-% vielleicht war ich auch in einem anderen kulturkreis
-% oder vielleicht in einer anderen Klimazone
+\numberednote{
 
-% auf alle diese bilder passt die beschreibung von sonne, strand und meer
+\begin{itemize}
+\item sonne stand am himmel, strand breitete sich vor mir aus, meer schwappte sanft ans ufer
+\item jeder von euch hat wahrscheinlich ein bild im kopf
+\item vielleicht sieht euer bild so oder so ähnlich aus
+\item vielleicht war ich aber gar nicht allein, sondern in Gesellschaft
+\item vielleicht war ich auch in einem anderen kulturkreis
+\item oder vielleicht in einer anderen Klimazone
+\end{itemize}
+
+auf alle diese bilder passt die beschreibung von sonne, strand und meer
+
+}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -187,11 +213,16 @@ Warum Domain-Driven Design?
 
 \end{frame}
 
-% wenn ich eine skizze meines urlaubs male, dann gibt es euch vielleicht eine chance, Rückfragen zu stellen und dinge zu klären
+\numberednote{
 
-% was ist das da für ein felsen im wasser, und wieso ist der blau? -> Das ist kein Felsen, sondern ein Eisberg.
+\begin{itemize}
+\item wenn ich eine skizze meines urlaubs male, dann gibt es euch vielleicht eine chance, Rückfragen zu stellen und dinge zu klären
 
-% Offensichtliches bleibt gern unerwähnt.
+\item was ist das da für ein felsen im wasser, und wieso ist der blau? -> Das ist kein Felsen, sondern ein Eisberg.
+
+\item Offensichtliches bleibt gern unerwähnt.
+\end{itemize}
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]{WARNUNG}
@@ -205,8 +236,9 @@ Hier bei uns passiert gerade dasselbe!
 
 \end{frame}
 
-% Vieles, was ich sage, versteht Ihr vermutlich anders als ich es erwarte
-
+\numberednote{
+Vieles, was ich sage, versteht Ihr vermutlich anders als ich es erwarte
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]{}
@@ -219,8 +251,6 @@ WORKSHOP}
 
 \end{frame}
 
-
-%Domäne vorstellen: Orders, Products, Inventory
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]{Unsere Domäne: eCommerce}
@@ -242,6 +272,14 @@ WORKSHOP}
 \end{tikzpicture}
 
 \end{frame}
+
+\numberednote{
+\begin{itemize}
+\item Onlineshop
+\item Lagerhaltung
+\item Bestellungen
+\end{itemize}
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -272,16 +310,22 @@ WORKSHOP}
 \end{frame}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}[fragile]{Übung}
+%
+%Erfassen Sie die Events der Domäne \glqq eCommerce\grqq !
+%
+%\end{frame}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Übung}
+%\begin{frame}[fragile]{Was kann schiefgehen?}
+\numberednote{
 
-Erfassen Sie die Events der Domäne \glqq eCommerce\grqq !
+\textbf{Übung:} Events der Domäne erfassen! (20 - 30 min)
 
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Was kann schiefgehen?}
+~\\
+\textbf{Was kann schiefgehen:}
 
 \begin{itemize}
 \item kein Verb
@@ -293,7 +337,8 @@ Erfassen Sie die Events der Domäne \glqq eCommerce\grqq !
 \end{itemize}
 \end{itemize}
 
-\end{frame}
+}
+%\end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -308,7 +353,7 @@ Erfassen Sie die Events der Domäne \glqq eCommerce\grqq !
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Beispiel}
+\begin{frame}[fragile]{Zeit}
 
 \begin{center}
 \includegraphics[width=.5\textwidth]{pics/eventstorming_zeit.jpg}
@@ -318,7 +363,21 @@ Erfassen Sie die Events der Domäne \glqq eCommerce\grqq !
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Übung}
+\begin{frame}[fragile]{Beispiel}
+
+\begin{center}
+\includegraphics[width=.5\textwidth]{pics/eventstorming_zeitlich_geordnet.jpg}
+\end{center}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}[fragile]{Übung}
+
+\numberednote{
+
+\textbf{Übung:}
 
 \begin{itemize}
 
@@ -334,16 +393,23 @@ Erfassen Sie die Events der Domäne \glqq eCommerce\grqq !
 
 \end{itemize}
 
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Was kann schiefgehen?}
+\textbf{Was kann schiefgehen?}
 
 \begin{itemize}
 \item x
 \end{itemize}
 
-\end{frame}
+}
+%\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}[fragile]{Was kann schiefgehen?}
+%
+%\begin{itemize}
+%\item x
+%\end{itemize}
+%
+%\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]{EventStorming III}
@@ -386,26 +452,21 @@ Erfassen Sie die Events der Domäne \glqq eCommerce\grqq !
 
 \end{frame}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Übung}
+\numberednote{
+\textbf{Übung}
 
 \begin{itemize}
 \item Events um Commands und ggf.~auch Constraints ergänzen
 \item Fehlendes ergänzen
 \end{itemize}
 
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Was kann schiefgehen?}
+\textbf{Was kann schiefgehen?}
 
 \begin{itemize}
 \item x
 \end{itemize}
 
-\end{frame}
-
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -433,27 +494,22 @@ Erfassen Sie die Events der Domäne \glqq eCommerce\grqq !
 
 \end{frame}
 
+\numberednote{
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Übung}
+\textbf{Übung}
 
 \begin{itemize}
 \item In Constraints und Events erforderliche \textbf{Daten} zufügen
 \item Fehlendes ergänzen
 \end{itemize}
 
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Was kann schiefgehen?}
+\textbf{Was kann schiefgehen?}
 
 \begin{itemize}
 \item x
 \end{itemize}
 
-\end{frame}
-
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -470,22 +526,18 @@ Erfassen Sie die Events der Domäne \glqq eCommerce\grqq !
 
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Übung}
+\numberednote{
+\textbf{Übung}
 
 Identifizieren Sie die Bounded Contexts in Ihrem Modell.
 
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Was kann schiefgehen?}
+\textbf{Was kann schiefgehen?}
 
 \begin{itemize}
 \item x
 \end{itemize}
 
-\end{frame}
-
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -510,22 +562,19 @@ Identifizieren Sie die Bounded Contexts in Ihrem Modell.
 
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Übung}
+\numberednote{
+
+\textbf{Übung}
 
 Identifizieren Sie User Stories in Ihrem Modell.
 
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Was kann schiefgehen?}
+\textbf{Was kann schiefgehen?}
 
 \begin{itemize}
 \item x
 \end{itemize}
 
-\end{frame}
-
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -671,6 +720,8 @@ Wie geht's weiter?
                 \item[Web] \href{http://www.nicole-rauch.de}{\texttt{http://www.nicole-rauch.de}}
         \end{description}
         \end{block}
+        
+        EventStorming und DDD $\cdot$ Training $\cdot$ Coaching $\cdot$ Facilitation
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
