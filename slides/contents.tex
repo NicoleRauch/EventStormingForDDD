@@ -22,7 +22,9 @@ Warum Domain-Driven Design?
 
 \end{frame}
 
+%-----------------------------------------------------------------------------------------------------------------------------------
 \numberednote{
+
 Wir fokussieren heute auf den 1. und ein Stück weit auf den 2. Aspekt.
 }
 
@@ -80,21 +82,9 @@ Wir fokussieren heute auf den 1. und ein Stück weit auf den 2. Aspekt.
 
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame}[fragile]{}
-%
-%\begin{itemize}
-%\item Wenig Domain-Driven Design
-%\item Viel gemeinsames Verständnis
-%\begin{itemize}
-%\item Knowledge Crunching
-%\item mit EventStorming
-%\end{itemize}
-%\end{itemize}
-%
-%\end{frame}
-
+%-----------------------------------------------------------------------------------------------------------------------------------
 \numberednote{
+
 Standing on the shoulders of giants
 
 ~\\
@@ -125,6 +115,7 @@ EventStorming: sehr schnell sehr detailliertes Modell
 
 \end{frame}
 
+%-----------------------------------------------------------------------------------------------------------------------------------
 \numberednote{
 
 Jeder entwickelt eigene Vorstellung von etwas Gehörtem
@@ -142,6 +133,7 @@ Jeder entwickelt eigene Vorstellung von etwas Gehörtem
 
 \end{frame}
 
+%-----------------------------------------------------------------------------------------------------------------------------------
 \numberednote{
 
 \begin{itemize}
@@ -213,6 +205,7 @@ auf alle diese bilder passt die beschreibung von sonne, strand und meer
 
 \end{frame}
 
+%-----------------------------------------------------------------------------------------------------------------------------------
 \numberednote{
 
 \begin{itemize}
@@ -236,7 +229,9 @@ Hier bei uns passiert gerade dasselbe!
 
 \end{frame}
 
+%-----------------------------------------------------------------------------------------------------------------------------------
 \numberednote{
+
 Vieles, was ich sage, versteht Ihr vermutlich anders als ich es erwarte
 }
 
@@ -273,7 +268,9 @@ WORKSHOP}
 
 \end{frame}
 
+%-----------------------------------------------------------------------------------------------------------------------------------
 \numberednote{
+
 \begin{itemize}
 \item Onlineshop
 \item Lagerhaltung
@@ -310,16 +307,7 @@ WORKSHOP}
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame}[fragile]{Übung}
-%
-%Erfassen Sie die Events der Domäne \glqq eCommerce\grqq !
-%
-%\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame}[fragile]{Was kann schiefgehen?}
+%-----------------------------------------------------------------------------------------------------------------------------------
 \numberednote{
 
 \textbf{Übung:} Events der Domäne erfassen! (20 - 30 min)
@@ -338,7 +326,6 @@ WORKSHOP}
 \end{itemize}
 
 }
-%\end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -371,10 +358,7 @@ WORKSHOP}
 
 \end{frame}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame}[fragile]{Übung}
-
+%-----------------------------------------------------------------------------------------------------------------------------------
 \numberednote{
 
 \textbf{Übung:}
@@ -393,6 +377,13 @@ WORKSHOP}
 
 \end{itemize}
 
+~\\
+\textbf{Kritische Fragen:}
+\begin{itemize}
+\item Was wenn dies vor jenem passiert?
+\end{itemize}
+
+~\\
 \textbf{Was kann schiefgehen?}
 
 \begin{itemize}
@@ -400,16 +391,7 @@ WORKSHOP}
 \end{itemize}
 
 }
-%\end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame}[fragile]{Was kann schiefgehen?}
-%
-%\begin{itemize}
-%\item x
-%\end{itemize}
-%
-%\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]{EventStorming III}
@@ -433,12 +415,13 @@ WORKSHOP}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]{EventStorming III}
 
 \begin{itemize}
 \item Nicht alle Commands führen direkt zu einem Event
 \item \textbf{Constraints} müssen berücksichtigt werden
+\item Entscheidung als Frage formulieren
+\item Events beantworten die Frage
 \end{itemize}
 
 \end{frame}
@@ -452,14 +435,36 @@ WORKSHOP}
 
 \end{frame}
 
+
+- Darstellung von Zeit
+- Darstellung von Wiederholung
+
+
+%-----------------------------------------------------------------------------------------------------------------------------------
 \numberednote{
+
 \textbf{Übung}
 
 \begin{itemize}
 \item Events um Commands und ggf.~auch Constraints ergänzen
-\item Fehlendes ergänzen
+\item Was musste passieren, damit dieses Event stattfinden konnte?
+\item Sauberer modellieren
+\item Clusterbildung
+\item Granularität angleichen
+\item Vollständigkeit checken, Fehlendes ergänzen
 \end{itemize}
 
+~\\
+\textbf{Kritische Fragen:}
+
+\begin{itemize}
+\item Folgt dies immer direkt? 
+\item Gibt es hier keine Constraints?
+\end{itemize}
+
+Wenn keine Constraints: Entweder Domäne langweilig oder Problem noch nicht verstanden
+
+~\\
 \textbf{Was kann schiefgehen?}
 
 \begin{itemize}
@@ -484,7 +489,6 @@ WORKSHOP}
 
 \end{frame}
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]{Beispiel}
 
@@ -494,6 +498,7 @@ WORKSHOP}
 
 \end{frame}
 
+%-----------------------------------------------------------------------------------------------------------------------------------
 \numberednote{
 
 \textbf{Übung}
@@ -501,8 +506,18 @@ WORKSHOP}
 \begin{itemize}
 \item In Constraints und Events erforderliche \textbf{Daten} zufügen
 \item Fehlendes ergänzen
+\item Datenquellen identifizieren
+\item Verbindungen schaffen
 \end{itemize}
 
+~\\
+\textbf{Kritische Fragen:}
+
+\begin{itemize}
+\item x
+\end{itemize}
+
+~\\
 \textbf{Was kann schiefgehen?}
 
 \begin{itemize}
@@ -526,11 +541,21 @@ WORKSHOP}
 
 \end{frame}
 
+%-----------------------------------------------------------------------------------------------------------------------------------
 \numberednote{
+
 \textbf{Übung}
 
 Identifizieren Sie die Bounded Contexts in Ihrem Modell.
 
+~\\
+\textbf{Kritische Fragen:}
+
+\begin{itemize}
+\item x
+\end{itemize}
+
+~\\
 \textbf{Was kann schiefgehen?}
 
 \begin{itemize}
@@ -562,12 +587,21 @@ Identifizieren Sie die Bounded Contexts in Ihrem Modell.
 
 \end{frame}
 
+%-----------------------------------------------------------------------------------------------------------------------------------
 \numberednote{
 
 \textbf{Übung}
 
 Identifizieren Sie User Stories in Ihrem Modell.
 
+~\\
+\textbf{Kritische Fragen:}
+
+\begin{itemize}
+\item x
+\end{itemize}
+
+~\\
 \textbf{Was kann schiefgehen?}
 
 \begin{itemize}
@@ -576,6 +610,7 @@ Identifizieren Sie User Stories in Ihrem Modell.
 
 }
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]{Wie geht es weiter?}
@@ -583,51 +618,26 @@ Identifizieren Sie User Stories in Ihrem Modell.
 Umsetzung einer Story:
 
 \begin{itemize}
-\item Zuerst sehr detailliert modellieren
+\item Zuerst sehr detailliert modellieren, dann sofort implementieren
 \item Modell an die Wand hängen während der Entwicklung
 \item Alle Diskussionen an und mit diesem Modell durchführen
 \item Bei Änderungen Modell und Code aktualisieren!
+\item Event Sourced Implementierung ist einfach realisierbar
 \end{itemize}
 
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{}
 
+\begin{center}
+{
+\LARGE
+Zusammenfassung
+}
+\end{center}
 
-
-
-
-
-2) Zeitliche Reihenfolge
-Redundanzen raus
-Fehlendes ergänzen
-Ubiquitous Language etablieren
-
-Kritische Fragen:
-- Was wenn dies vor jenem passiert?
-
-3) Commands \& Constraints
-Commands: Was musste passieren, damit dieses Event stattfinden konnte?
-Constraints: Entscheidungen als Frage formulieren, die Events beantworten die Frage
-Sauberer modellieren
-Clusterbildung
-Granularität angleichen
-Vollständigkeit checken, Fehlendes ergänzen
-
-Kritische Fragen:
-- Folgt dies immer direkt? Gibt es hier keine Constraints?
-
-- Wenn keine Constraints: Entweder Domäne langweilig oder Problem noch nicht verstanden
-
-- Darstellung von Zeit
-- Darstellung von Wiederholung
-
-4) Daten zufügen, die bei Entscheidungen und für die Events benötigt werden
-Fehlendes ergänzen
-Datenquellen identifizieren
-Verbindungen schaffen
-
-
-Debrief
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]{Warum Modellieren?}
@@ -636,7 +646,6 @@ Debrief
 \item Modellieren dient dazu, Gedanken sichtbar und \glqq begreifbar\grqq{} zu machen
 \onslide+<2->
 \item Jeder entwickelt eigene Vorstellungen von etwas Gehörtem
-\item Das gilt übrigens auch für diesen Kurs!
 \onslide+<3->
 \item Ein Modell versucht Klarheit zu schaffen
 \item EventStorming ist ein Weg, sehr schnell zu einem sehr detaillierten Modell zu kommen
@@ -645,7 +654,7 @@ Debrief
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Grundsätzliches}
+\begin{frame}[fragile]{Kritische Fragen stellen}
 
 \begin{itemize}
 \item Alles mit dem Fachbereich abklären
@@ -662,47 +671,8 @@ Debrief
 \begin{itemize}
 \item Kollaboration zwischen Fachbereich und Entwicklern ist der entscheidende Faktor für den Erfolg eines Projekts
 \item Man braucht die Domänen-Experten des betreffenden Bereiches
+\item EventStorming ist auch ohne DDD einsetzbar
 \end{itemize}
-
-\end{frame}
-
-
-EventStorming auch außerhalb von DDD einsetzbar
-
-
-
-Wie geht's weiter?
-- Stories schneiden -> Einzel-EventStorming
-- Implementieren
-- Event Sourced implementieren
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{}
-
-\begin{itemize}
-\item x
-\end{itemize}
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{}
-
-\begin{center}
-{
-\LARGE
-}
-\end{center}
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{}
-
-\begin{center}
-%\includegraphics[width=\textwidth]{pics/.jpg}
-\end{center}
 
 \end{frame}
 
