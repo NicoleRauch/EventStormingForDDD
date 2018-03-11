@@ -127,7 +127,7 @@ Jeder entwickelt eigene Vorstellung von etwas Gehörtem
 
  \begin{tikzpicture}[remember picture,overlay]
             \node[at=(current page.center)] {
-\includegraphics[height=\paperheight]{pics/ich_berichte_von_meinem_urlaub.jpg} % sonne, strand, meer
+\includegraphics[height=\paperheight]{pics/ich_berichte_von_meinem_urlaub.pdf} % sonne, strand, meer
             };
 \end{tikzpicture}
 
@@ -137,7 +137,7 @@ Jeder entwickelt eigene Vorstellung von etwas Gehörtem
 \numberednote{
 
 \begin{itemize}
-\item sonne stand am himmel, strand breitete sich vor mir aus, meer schwappte sanft ans ufer
+\item strand breitete sich vor mir aus, meer schwappte sanft ans ufer, sonne stand am himmel
 \item jeder von euch hat wahrscheinlich ein bild im kopf
 \item vielleicht sieht euer bild so oder so ähnlich aus
 \item vielleicht war ich aber gar nicht allein, sondern in Gesellschaft
@@ -199,7 +199,7 @@ auf alle diese bilder passt die beschreibung von sonne, strand und meer
 
  \begin{tikzpicture}[remember picture,overlay]
             \node[at=(current page.center)] {
-\includegraphics[height=\paperheight]{pics/eine_skizze_meines_urlaubs.jpg}
+\includegraphics[height=\paperheight]{pics/eine_skizze_meines_urlaubs.pdf}
             };
 \end{tikzpicture}
 
@@ -353,7 +353,7 @@ WORKSHOP}
 \begin{frame}[fragile]{Beispiel}
 
 \begin{center}
-\includegraphics[width=.5\textwidth]{pics/eventstorming_zeitlich_geordnet.jpg}
+\includegraphics[width=.9\textwidth]{pics/eventstorming_zeitlich_geordnet.jpg}
 \end{center}
 
 \end{frame}
@@ -435,11 +435,6 @@ WORKSHOP}
 
 \end{frame}
 
-
-- Darstellung von Zeit
-- Darstellung von Wiederholung
-
-
 %-----------------------------------------------------------------------------------------------------------------------------------
 \numberednote{
 
@@ -454,7 +449,10 @@ WORKSHOP}
 \item Vollständigkeit checken, Fehlendes ergänzen
 \end{itemize}
 
-~\\
+\hfill $\Longrightarrow$
+}
+
+\numberednote{
 \textbf{Kritische Fragen:}
 
 \begin{itemize}
@@ -470,6 +468,47 @@ Wenn keine Constraints: Entweder Domäne langweilig oder Problem noch nicht vers
 \begin{itemize}
 \item x
 \end{itemize}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Darstellung von Zeit}
+
+\onslide+<2->
+ \begin{tikzpicture}
+ % x (kleiner = weiter nach links) y (kleiner = weiter nach unten)
+            \put (-10,-20) { \includegraphics[width=.4\textwidth]{pics/darstellung_von_zeit_kurz.jpg} };
+\end{tikzpicture}
+
+\onslide+<3->
+ \begin{tikzpicture}
+            \put (150,-100) { \includegraphics[height=.4\textheight]{pics/darstellung_von_zeit_lang.jpg} };
+\end{tikzpicture}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Darstellung von Wiederholung}
+
+\begin{center}
+\includegraphics[width=.5\textwidth]{pics/darstellung_von_wiederholung.jpg}
+\end{center}
+
+\end{frame}
+
+\numberednote{
+
+Achtung: Entwickler denken gern in Wiederholungen = Schleifen
+
+~\\
+
+\textbf{Kritische Fragen:}
+
+\begin{itemize}
+\item Ist der nächste Durchlauf wirklich exakt identisch? 
+\end{itemize}
+
+Beispiel: Die 3. Mahnung sieht sicher anders aus als die erste...
 
 }
 
@@ -679,8 +718,6 @@ Zusammenfassung
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Vielen Dank!}
-
-        Folien: \url{https://github.com/NicoleRauch/} 
         
         ~\\[1em]
         \begin{block}{Nicole Rauch}
@@ -690,7 +727,7 @@ Zusammenfassung
                 \item[Web] \href{http://www.nicole-rauch.de}{\texttt{http://www.nicole-rauch.de}}
         \end{description}
         \end{block}
-        
+        ~\\[1em]
         EventStorming und DDD $\cdot$ Training $\cdot$ Coaching $\cdot$ Facilitation
 \end{frame}
 
