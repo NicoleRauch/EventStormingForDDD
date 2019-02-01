@@ -5,7 +5,7 @@
 \begin{center}
 {
 \LARGE
-Warum Domain-Driven Design?
+\de{Warum}\en{Why} Domain-Driven Design?
 }
 \end{center}
 
@@ -15,9 +15,9 @@ Warum Domain-Driven Design?
 \begin{frame}[fragile]{DDD in a Nutshell}
 
 \begin{itemize}
-\item Gemeinsames Verständnis schaffen
-\item Trennung Business Logik $\leftrightarrow$ Technik
-\item Strukturierung des Codes
+\item \de{Gemeinsames Verständnis schaffen}\en{Build common understanding}
+\item \de{Trennung Business Logik $\leftrightarrow$ Technik}\en{Separate business logic $\leftrightarrow$ technical stuff}
+\item \de{Strukturierung des Codes}\en{Structure the code}
 \end{itemize}
 
 \end{frame}
@@ -29,10 +29,10 @@ Wir fokussieren heute auf den 1. und ein Stück weit auf den 2. Aspekt.
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Gemeinsames Verständnis schaffen}
+\begin{frame}[fragile]{\de{Gemeinsames Verständnis schaffen}\en{Build Common Understanding}}
 
 \begin{itemize}
-\item Hat hohen Stellenwert
+\item \de{Hat hohen Stellenwert}\en{Very important}
 \item \glqq Knowledge Crunching\grqq
 \end{itemize}
 
@@ -105,12 +105,12 @@ EventStorming: sehr schnell sehr detailliertes Modell
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Gemeinsames Verständnis schaffen - Warum?}
+\begin{frame}[fragile]{\de{Gemeinsames Verständnis schaffen - Warum?}\en{Create Common Understanding - Why?}}
 
 \begin{itemize}
-\item Gedanken sichtbar und ``begreifbar'' machen
-\item Modell schafft Klarheit
-\item Ubiquitous Language grenzt Begriffe ab
+\item \de{Gedanken sichtbar und ``begreifbar'' machen}\en{Make thoughts visible and tangible}
+\item \de{Modell schafft Klarheit}\en{Model establishes clarity}
+\item Ubiquitous Language \de{grenzt Begriffe ab}\en{defines the scope of terms}
 \end{itemize}
 
 \end{frame}
@@ -224,12 +224,12 @@ auf alle diese bilder passt die beschreibung von sonne, strand und meer
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{WARNUNG}
+\begin{frame}[fragile]{\de{WARNUNG}\en{WARNING}}
 
 \begin{center}
 {
 \LARGE
-Hier bei uns passiert gerade dasselbe!
+\de{Hier bei uns passiert gerade dasselbe!}\en{Here the same happens!}
 }
 \end{center}
 
@@ -254,7 +254,7 @@ WORKSHOP}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Unsere Domäne: eCommerce}
+\begin{frame}[fragile]{\de{Unsere Domäne}\en{Our Domain}: eCommerce}
 
 \onslide+<2->
  \begin{tikzpicture}
@@ -288,22 +288,22 @@ WORKSHOP}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]{EventStorming I}
 
-\textbf{Events} erfassen
+\de{Capture} \textbf{Events} \de{erfassen}
 
 \begin{itemize}
-\item Ereignis in der Vergangenheit
-\item Relevant für den Fachbereich
-\item Beobachtbar im System
+\item \de{Ereignis in der Vergangenheit}\en{Something that happened in the past}
+\item \de{Relevant für den Fachbereich}\en{Relevant for the business}
+\item \de{Beobachtbar im System}\en{Observable in the system}
 \end{itemize}
 
 \begin{itemize}
-\item Beschrieben durch \textbf{Verb in der Vergangenheit}
+\item \de{Beschrieben durch \textbf{Verb in der Vergangenheit}}\en{Described by a \textbf{verb in the past}}
 \end{itemize}
 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Beispiel}
+\begin{frame}[fragile]{\de{Beispiel}\en{Example}}
 
 \begin{center}
 \includegraphics[width=.5\textwidth]{pics/eventstorming1.jpg}
@@ -334,7 +334,7 @@ WORKSHOP}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{So kann das aussehen}
+\begin{frame}[fragile]{\de{So kann das aussehen}\en{That's how it can look like}}
 
 \begin{center}
 \includegraphics[width=.5\textwidth]{pics/modelling_events.jpg}
@@ -348,14 +348,14 @@ WORKSHOP}
 \begin{frame}[fragile]{EventStorming II}
 
 \begin{itemize}
-\item Viele Events unterliegen einer zeitlichen Abfolge
-\item Zeit verläuft \textbf{von links nach rechts}
+\item \de{Viele Events unterliegen einer zeitlichen Abfolge}\en{Many events are in chronological order}
+\item \de{Zeit verläuft \textbf{von links nach rechts}}\en{Time runs \textbf{from left to right}}
 \end{itemize}
 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Zeit}
+\begin{frame}[fragile]{\de{Zeit}\en{Time}}
 
 \begin{center}
 \includegraphics[width=.5\textwidth]{pics/eventstorming_zeit.jpg}
@@ -365,7 +365,7 @@ WORKSHOP}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Beispiel}
+\begin{frame}[fragile]{\de{Beispiel}\en{Example}}
 
 \begin{center}
 \includegraphics[width=.9\textwidth]{pics/eventstorming_zeitlich_geordnet.jpg}
@@ -408,7 +408,7 @@ WORKSHOP}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{So kann das aussehen}
+\begin{frame}[fragile]{\de{So kann das aussehen}\en{That's what it can look like}}
 
 \begin{center}
 \includegraphics[width=.5\textwidth]{pics/modelling_events_zeit2.jpg}
@@ -422,15 +422,15 @@ WORKSHOP}
 \begin{frame}[fragile]{EventStorming III}
 
 \begin{itemize}
-\item Vor einem Event muss etwas im System passiert sein:
+\item \de{Vor einem Event muss etwas im System passiert sein:}\en{Each event must be raised by some activity in the system}
 \item \textbf{Command}
-\item Werden in Befehlsform ausgedrückt
+\item \de{Werden in Befehlsform ausgedrückt}\en{Are expressed in the imperative}
 \end{itemize}
 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Beispiel}
+\begin{frame}[fragile]{\de{Beispiel}\en{Example}}
 
 \begin{center}
 \includegraphics[width=.7\textwidth]{pics/eventstorming2.jpg}
@@ -443,16 +443,16 @@ WORKSHOP}
 \begin{frame}[fragile]{EventStorming III}
 
 \begin{itemize}
-\item Nicht alle Commands führen direkt zu einem Event
-\item \textbf{Constraints} müssen berücksichtigt werden
-\item Entscheidung als Frage formulieren
-\item Events beantworten die Frage
+\item \de{Nicht alle Commands führen direkt zu einem Event}\en{Not all commands lead to an event unconditionally}
+\item \textbf{Constraints} \de{müssen berücksichtigt werden}\en{need to be considered}
+\item \de{Entscheidung als Frage formulieren}\en{Decision is formulated as question}
+\item \de{Events beantworten die Frage}\en{Events answer the question}
 \end{itemize}
 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Beispiel}
+\begin{frame}[fragile]{\de{Beispiel}\en{Example}}
 
 \begin{center}
 \includegraphics[width=.85\textwidth]{pics/eventstorming3.jpg}
@@ -497,7 +497,7 @@ Wenn keine Constraints: Entweder Domäne langweilig oder Problem noch nicht vers
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{So kann das aussehen}
+\begin{frame}[fragile]{\de{So kann das aussehen}\en{That's what it can look like}}
 
 \begin{center}
 \includegraphics[width=.5\textwidth]{pics/modelling_commands_constraints1.jpg}
@@ -508,7 +508,7 @@ Wenn keine Constraints: Entweder Domäne langweilig oder Problem noch nicht vers
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Darstellung von Zeit}
+\begin{frame}[fragile]{\de{Darstellung von Zeit}\en{Representing Time}}
 
 \onslide+<2->
  \begin{tikzpicture}
@@ -524,7 +524,7 @@ Wenn keine Constraints: Entweder Domäne langweilig oder Problem noch nicht vers
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Darstellung von Wiederholung}
+\begin{frame}[fragile]{\de{Darstellung von Wiederholung}\en{Representing Repetition}}
 
 \begin{center}
 \includegraphics[width=.5\textwidth]{pics/darstellung_von_wiederholung.jpg}
@@ -553,19 +553,19 @@ Beispiel: Die 3. Mahnung sieht sicher anders aus als die erste...
 \begin{frame}[fragile]{EventStorming IV}
 
 \begin{itemize}
-\item Constraints benötigen \textbf{Daten} zur Entscheidung
-\item Müssen verfügbar sein
+\item \de{Constraints benötigen \textbf{Daten} zur Entscheidung}\en{Constraints need \textbf{data} for their answers}
+\item \de{Müssen verfügbar sein}\en{Data must be available}
 \begin{itemize}
-\item Vorherige Erfassung in Event
-\item Aus anderem Systemteil
+\item \de{Vorherige Erfassung in Event}\en{Captured via event before the command}
+\item \de{Aus anderem Systemteil}\en{From another part of the system}
 \end{itemize}
-\item Fehlen sie, muss das Modell ergänzt werden
+\item \de{Fehlen sie, muss das Modell ergänzt werden}\en{If missing $\Longrightarrow$ amend the model}
 \end{itemize}
 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Beispiel}
+\begin{frame}[fragile]{\de{Beispiel}\en{Example}}
 
 \begin{center}
 \includegraphics[width=.85\textwidth]{pics/eventstorming4.jpg}
@@ -608,10 +608,10 @@ Beispiel: Die 3. Mahnung sieht sicher anders aus als die erste...
 \begin{itemize}
 \item \textbf{Bounded Contexts}
 \begin{itemize}
-\item hohe Kopplung \textbf{innerhalb}
-\item Wenige Abhängigkeiten \textbf{dazwischen}
+\item \de{hohe Kopplung \textbf{innerhalb}}\en{high coupling \textbf{inside}}
+\item \de{Wenige Abhängigkeiten \textbf{dazwischen}}\en{Few dependencies \textbf{across}}
 \end{itemize}
-\item Abhängigkeiten ggf.~mit Wollfäden symbolisieren
+\item \de{Abhängigkeiten ggf.~mit Wollfäden symbolisieren}\en{Can be modelled with yarn}
 \end{itemize}
 
 \end{frame}
@@ -644,17 +644,17 @@ Identifizieren Sie die Bounded Contexts in Ihrem Modell.
 \begin{frame}[fragile]{EventStorming VI}
 
 \begin{itemize}
-\item \textbf{Entwicklungspakete} (User Stories) ableiten
-\item Command mit Events $\Rightarrow$ Story
+\item \de{\textbf{Entwicklungspakete} (User Stories) ableiten}\en{Derive development units (user stories)}
+\item \de{Command mit Events $\Rightarrow$ Story}\en{Command + events $\Rightarrow$ story}
 \begin{itemize}
-\item Ggf.~aufteilen in Happy Path + weitere Fälle
+\item \de{Ggf.~aufteilen in Happy Path + weitere Fälle}\en{If necessary, split into Happy Path + further cases}
 \end{itemize}
 \end{itemize}
 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Beispiel}
+\begin{frame}[fragile]{\de{Beispiel}\en{Example}}
 
 \begin{center}
 \includegraphics[width=.85\textwidth]{pics/eventstorming_stories.jpg}
@@ -688,16 +688,16 @@ Identifizieren Sie User Stories in Ihrem Modell.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Wie geht es weiter?}
+\begin{frame}[fragile]{\de{Wie geht es weiter?}\en{What's Next?}}
 
-Umsetzung einer Story:
+\de{Umsetzung einer Story:}\en{Implementing a story:}
 
 \begin{itemize}
-\item Zuerst sehr detailliert modellieren, dann sofort implementieren
-\item Modell an die Wand hängen während der Entwicklung
-\item Alle Diskussionen an und mit diesem Modell durchführen
-\item Bei Änderungen Modell und Code aktualisieren!
-\item Event Sourced Implementierung ist einfach realisierbar
+\item \de{Zuerst sehr detailliert modellieren, dann sofort implementieren}\en{Model in great detail, implement immediately}
+\item \de{Modell an die Wand hängen während der Entwicklung}\en{Stick model to wall during development}
+\item \de{Alle Diskussionen an und mit diesem Modell durchführen}\en{Discuss everything based on this model}
+\item \de{Bei Änderungen Modell und Code aktualisieren!}\en{Changes $\Rightarrow$ update model and code!}
+\item \de{Event Sourced Implementierung ist einfach realisierbar}\en{Easy to implement with event sourcing}
 \end{itemize}
 
 \end{frame}
@@ -708,45 +708,45 @@ Umsetzung einer Story:
 \begin{center}
 {
 \LARGE
-Zusammenfassung
+\de{Zusammenfassung}\en{Summary}
 }
 \end{center}
 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Warum Modellieren?}
+\begin{frame}[fragile]{\de{Warum Modellieren?}\en{Why Modelling?}}
 
 \begin{itemize}
-\item Modellieren dient dazu, Gedanken sichtbar und \glqq begreifbar\grqq{} zu machen
+\item \de{Modellieren dient dazu, Gedanken sichtbar und \glqq begreifbar\grqq{} zu machen}\en{Modelling helps make thoughts visible and tangible}
 \onslide+<2->
-\item Jeder entwickelt eigene Vorstellungen von etwas Gehörtem
+\item \de{Jeder entwickelt eigene Vorstellungen von etwas Gehörtem}\en{Everybody develops their own understanding of something they heard}
 \onslide+<3->
-\item Ein Modell versucht Klarheit zu schaffen
-\item EventStorming ist ein Weg, sehr schnell zu einem sehr detaillierten Modell zu kommen
+\item \de{Ein Modell versucht Klarheit zu schaffen}\en{Model tries to add clarity}
+\item \de{EventStorming ist ein Weg, sehr schnell zu einem sehr detaillierten Modell zu kommen}\en{EventStorming helps get to a detailed model in a very short period of time}
 \end{itemize}
 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Kritische Fragen stellen}
+\begin{frame}[fragile]{\de{Kritische Fragen stellen}\en{Ask Critical Questions}}
 
 \begin{itemize}
-\item Details mit dem Fachbereich abklären
-\item Das Modell kritisch hinterfragen!
-\item Modellierungs-Alternativen diskutieren!
-\item \glqq Was wenn dies vor jenem passiert?\grqq
-\item Die üblichen Verdächtigen (\glqq immer\grqq, \glqq nie\grqq, \glqq kann nicht sein\grqq{} \ldots) verfolgen und entkräften
+\item \de{Details mit dem Fachbereich abklären}\en{Clarify details with the business people}
+\item \de{Das Modell kritisch hinterfragen!}\en{Critically question the model!}
+\item \de{Modellierungs-Alternativen diskutieren!}\en{Discuss alternative models}
+\item \de{\glqq Was wenn dies vor jenem passiert?\grqq}\en{``What if this happens earlier than that?''}
+\item \de{Die üblichen Verdächtigen (\glqq immer\grqq, \glqq nie\grqq, \glqq kann nicht sein\grqq{} \ldots) verfolgen und entkräften}\en{Follow the Usual Suspects$^{\textsf{TM}}$ (\textit{always, never,} ...) and invalidate them}
 \end{itemize}
 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Einsichten in die Domäne gewinnen}
+\begin{frame}[fragile]{\de{Einsichten in die Domäne gewinnen}\en{Gain Insights into the Domain}}
 \begin{itemize}
-\item Kollaboration zwischen Fachbereich und Entwicklern ist der entscheidende Faktor für den Erfolg eines Projekts
-\item Man braucht die Domänen-Experten des betreffenden Bereiches
-\item EventStorming ist auch ohne DDD einsetzbar
+\item \de{Kollaboration zwischen Fachbereich und Entwicklern ist der entscheidende Faktor für den Erfolg eines Projekts}\en{Collaboration between devs and business is key for a project's success}
+\item \de{Man braucht die Domänen-Experten des betreffenden Bereiches}\en{You need your domain experts}
+\item \de{EventStorming ist auch ohne DDD einsetzbar}\en{EventStorming can be used without DDD}
 \end{itemize}
 
 \end{frame}
